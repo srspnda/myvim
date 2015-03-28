@@ -13,4 +13,7 @@ set smartcase
 syntax on
 colorscheme molokai
 
-noremap <silent><leader>/ :nohlsearch<cr> 
+noremap <silent><leader>/ :nohlsearch<cr>
+
+" chef-runner 
+noremap <leader>r :w\|!chef-runner -F min -l warn %<cr>
