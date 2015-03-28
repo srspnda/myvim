@@ -92,6 +92,9 @@ map k gk
 " chef-runner
 noremap <leader>r :w\|!chef-runner -F min -l warn %<cr>
 
+" knife upload
+noremap <leader>chefup :w\|!chefup<cr>
+
 " easy split navigation
 map <C-j> <C-w>j
 map <C-k> <C-w>k
