@@ -44,8 +44,7 @@ set shiftwidth=2
 "
 " tab completion options
 "
-set wildmode=list:longest     " Wildcard matches show a list, matching the
-longest first
+set wildmode=list:longest     " Wildcard matches show a list, matching the longest first
 set wildignore+=.git,.hg,.svn " Ignore version control repos
 set wildignore+=*.6           " Ignore Go compiled files
 set wildignore+=*.pyc         " Ignore Python compiled files
@@ -55,7 +54,8 @@ set wildignore+=*.swp         " Ignore vim backups
 "
 " appearance options
 "
-colorscheme molokai
+set background=dark
+colorscheme base16-solarized
 
 "
 " backup options
