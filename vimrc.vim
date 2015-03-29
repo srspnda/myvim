@@ -23,8 +23,6 @@ set title
 set visualbell
 set showbreak=↪
 
-syntax on
-
 "
 " search options
 "
@@ -57,7 +55,6 @@ set wildignore+=*.swp         " Ignore vim backups
 syntax enable
 set background=dark
 colorscheme solarized
-let g:solarized_termcolors=256
 
 "
 " backup options
