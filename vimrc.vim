@@ -55,7 +55,7 @@ set wildignore+=*.swp         " Ignore vim backups
 " appearance options
 "
 set background=dark
-colorscheme base16-solarized
+colorscheme solarized
 
 "
 " backup options
