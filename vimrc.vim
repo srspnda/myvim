@@ -53,8 +53,7 @@ set wildignore+=*.swp         " Ignore vim backups
 " appearance options
 "
 syntax enable
-set background=dark
-colorscheme solarized
+colorscheme molokai
 
 "
 " backup options
