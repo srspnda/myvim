@@ -32,14 +32,6 @@ set incsearch
 set smartcase
 
 "
-" tab options
-"
-set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-
-"
 " tab completion options
 "
 set wildmode=list:longest     " Wildcard matches show a list, matching the longest first
@@ -78,6 +70,13 @@ inoremap jk <esc>
 inoremap jK <esc>
 inoremap Jk <esc>
 inoremap JK <esc>
+
+" file types
+autocmd FileType text setlocal textwidth=78
+autocmd FileType ruby setlocal sts=2 ts=2 sw=2 expandtab
+autocmd FileType json setlocal sts=2 ts=2 sw=2 expandtab
+autocmd FileType go setlocal sts=8 ts=8 sw=8 noexpandtab
+autocmd FileType make setlocal sts=8 ts=8 sw=8 noexpandtab
 
 " edit vimrc
 nmap <silent> <leader>vimrc :e ~/.vimrc<CR>
