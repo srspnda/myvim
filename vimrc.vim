@@ -22,7 +22,8 @@ set splitright
 set title
 set visualbell
 set showbreak=↪
-set number
+set nonumber
+
 "
 " search options
 "
@@ -45,7 +46,7 @@ set wildignore+=*.swp         " Ignore vim backups
 " appearance options
 "
 syntax enable
-colorscheme default
+colorscheme molokai
 
 "
 " backup options
@@ -81,16 +82,9 @@ autocmd FileType make setlocal sts=8 ts=8 sw=8 noexpandtab
 " edit vimrc
 nmap <silent> <leader>vimrc :e ~/.vimrc<CR>
 
-
 " visual wrapping up/down, not entire lines
 map j gj
 map k gk
-
-" chef-runner
-noremap <leader>r :w\|!chef-runner -F min -l warn %<cr>
-
-" knife upload
-noremap <leader>chefup :w\|!chefup<cr>
 
 " easy split navigation
 map <C-j> <C-w>j
@@ -101,7 +95,6 @@ map <C-l> <C-w>l
 " yank to system clipboard
 map <leader>y "*y
 map <leader>p "*p
-
 "
 " autocommands
 "
