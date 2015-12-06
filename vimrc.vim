@@ -84,6 +84,9 @@ autocmd FileType tf setlocal sts=4 ts=4 sw=4 expandtab
 " edit vimrc
 nmap <silent> <leader>vimrc :e ~/.vimrc<CR>
 
+" shortcut to cmdline
+map ; :
+
 " visual wrapping up/down, not entire lines
 map j gj
 map k gk
