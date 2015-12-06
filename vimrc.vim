@@ -25,6 +25,12 @@ set showbreak=↪
 set nonumber
 
 "
+" clipboard options
+"
+
+set clipboard+=unnamedplus
+
+"
 " search options
 "
 set hlsearch
