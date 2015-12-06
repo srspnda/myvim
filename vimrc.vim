@@ -79,6 +79,7 @@ autocmd FileType json setlocal sts=2 ts=2 sw=2 expandtab
 autocmd FileType go setlocal sts=8 ts=8 sw=8 noexpandtab
 autocmd FileType make setlocal sts=8 ts=8 sw=8 noexpandtab
 autocmd FileType python setlocal sts=4 ts=4 sw=4 expandtab
+autocmd FileType tf setlocal sts=4 ts=4 sw=4 expandtab
 
 " edit vimrc
 nmap <silent> <leader>vimrc :e ~/.vimrc<CR>
