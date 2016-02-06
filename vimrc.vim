@@ -114,3 +114,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " no folding
 autocmd BufWinEnter * set foldlevel=999999
+
+" goimports
+let g:go_fmt_command = "goimports"
