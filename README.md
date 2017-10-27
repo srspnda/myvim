@@ -1,3 +1,3 @@
-# myvim
+# vimrc
 
 personal vim config.
