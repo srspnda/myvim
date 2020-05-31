@@ -8,7 +8,6 @@ let mapleader=";"
 set autoread
 set nocompatible
 set backspace=2
-set colorcolumn=80
 set cursorline
 set laststatus=2
 set list
@@ -86,6 +85,7 @@ autocmd FileType go setlocal sts=8 ts=8 sw=8 noexpandtab
 autocmd FileType make setlocal sts=8 ts=8 sw=8 noexpandtab
 autocmd FileType python setlocal sts=4 ts=4 sw=4 expandtab
 autocmd FileType tf setlocal sts=2 ts=2 sw=2 expandtab
+autocmd FileType yaml setlocal sts=2 ts=2 sw=2 expandtab
 
 " edit vimrc
 nmap <silent> <leader>vimrc :e ~/.vimrc<CR>
