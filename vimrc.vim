@@ -6,6 +6,7 @@ set encoding=utf-8
 "
 let mapleader=";"
 set autoread
+set autoindent
 set nocompatible
 set backspace=2
 set cursorline
@@ -20,14 +21,15 @@ set splitbelow
 set splitright
 set title
 set visualbell
-set showbreak=↪
 set nonumber
 
 "
 " clipboard options
 "
-
-set clipboard+=unnamedplus
+if has('unnamedplus')
+  set clipboard^=unnamed
+  set clipboard^=unnamedplus
+endif
 
 "
 " search options
@@ -48,9 +50,12 @@ set wildignore+=*.rbc         " Ignore Rubinius compiled files
 set wildignore+=*.swp         " Ignore vim backups
 
 "
-" appearance options
+" colorscheme
 "
 syntax enable
+set t_Co=256
+let g:rehash256 = 1
+let g:molokai_original = 1
 colorscheme molokai
 
 "
@@ -64,18 +69,6 @@ set undofile
 set writebackup
 
 noremap <silent><leader>/ :nohlsearch<cr>
-
-"
-" key mappings
-"
-inoremap jj <esc>
-inoremap jJ <esc>
-inoremap Jj <esc>
-inoremap JJ <esc>
-inoremap jk <esc>
-inoremap jK <esc>
-inoremap Jk <esc>
-inoremap JK <esc>
 
 " file types
 autocmd FileType text setlocal textwidth=78
