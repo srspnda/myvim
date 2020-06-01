@@ -15,6 +15,7 @@ set list
 set listchars=tab:›\ ,eol:¬,trail:⋅
 set showmatch
 set scrolloff=999
+set colorcolumn=80
 set ruler
 set splitbelow
 set splitright
