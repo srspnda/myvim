@@ -146,6 +146,15 @@ augroup go
   " :GoDoc
   autocmd FileType go nmap <Leader>d <Plug>(go-doc)
 
+  " :GoCoverageToggle
+  autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+
+  " :GoInfo
+  autocmd FileType go nmap <Leader>i <Plug>(go-info)
+
+  " :GoMetaLinter
+  autocmd FileType go nmap <Leader>l <Plug>(go-metalinter)
+
   " :GoDef but opens in a vertical split
   autocmd FileType go nmap <Leader>v <Plug>(go-def-vertical)
   " :GoDef but opens in a horizontal split
