@@ -22,7 +22,7 @@ set splitbelow
 set splitright
 set title
 set visualbell
-set nonumber
+set number
 
 "
 " clipboard options
